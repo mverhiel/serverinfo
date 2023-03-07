@@ -1,3 +1,5 @@
+BROKER schema serverinfo
+
 DECLARE clusterName EXTERNAL CHARACTER 'my-cluster';
 DECLARE clusterNamespace EXTERNAL CHARACTER 'my-Namespace';
 DECLARE myHostName EXTERNAL CHARACTER 'my-Hostname'; 	--configure server.conf.yaml as follows: 

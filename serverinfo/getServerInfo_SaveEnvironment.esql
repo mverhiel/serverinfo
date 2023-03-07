@@ -1,4 +1,4 @@
-
+BROKER schema serverinfo
 
 CREATE COMPUTE MODULE getServerInfo_SaveEnvironment
 	CREATE FUNCTION Main() RETURNS BOOLEAN
