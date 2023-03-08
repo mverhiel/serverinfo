@@ -2,8 +2,9 @@
 spec:
   params:
   - name: deployment-repo
-    value: "https://github.com/mverhiel/serverinfo.git"
+    value: "https://github.com/mverhiel/gitops-deploy.git"
+#    value: "https://github.com/mverhiel/serverinfo.git"
   - name: deployment-file 
     value: 'serverinfo/deployment.yaml'
   - name: deployment-repo-branch
-    value: master
+    value: main
