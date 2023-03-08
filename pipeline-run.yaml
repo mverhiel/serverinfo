@@ -2,7 +2,7 @@
 spec:
   params:
   - name: deployment-repo
-    value: "https://github.com/mverhiel/gitops-deploy.git"
+    value: "https://github.com/mverhiel/gitops-config.git"
 #    value: "https://github.com/mverhiel/serverinfo.git"
   - name: deployment-file 
     value: 'serverinfo/deployment.yaml'
