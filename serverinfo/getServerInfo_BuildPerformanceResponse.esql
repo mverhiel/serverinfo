@@ -42,7 +42,7 @@ CREATE COMPUTE MODULE getServerInfo_BuildPerformanceResponse
 		LOG EVENT VALUES('Service Invoked at: ' || CAST(CURRENT_TIMESTAMP AS CHARACTER) || 
 						' Elapsed time (ms): ' || CAST((endTime - startTime) AS CHARACTER));
 		
-		RETURN FALSE;
+		RETURN TRUE;
 	END;
 
 	CREATE PROCEDURE CopyMessageHeaders() BEGIN

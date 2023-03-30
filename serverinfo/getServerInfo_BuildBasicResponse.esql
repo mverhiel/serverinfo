@@ -29,13 +29,7 @@ CREATE COMPUTE MODULE getServerInfo_BuildBasicResponse
 		LOG EVENT VALUES('Service Invoked at: ' || CAST(CURRENT_TIMESTAMP AS CHARACTER) || 
 						' No performance data selected ');
 		
-		IF (Environment.Variables.MQ) THEN
-			PROPAGATE TO TERMINAL 'out1';
-		ELSE
-			PROPAGATE TO TERMINAL 'out';	
-		END IF;
-		
-		RETURN FALSE;
+		RETURN TRUE;
 	END;
 
 	CREATE PROCEDURE CopyMessageHeaders() BEGIN
