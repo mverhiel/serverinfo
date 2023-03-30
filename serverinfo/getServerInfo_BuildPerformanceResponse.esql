@@ -6,7 +6,7 @@ DECLARE myHostName EXTERNAL CHARACTER 'my-Hostname'; 	--configure server.conf.ya
 														--resolveUserVariableEnvVars: true
 														--UserVariables:
 														--  myHostName: ${HOSTNAME}
-CREATE COMPUTE MODULE getServerInfo_Compute
+CREATE COMPUTE MODULE getServerInfo_BuildPerformanceResponse
 	CREATE FUNCTION Main() RETURNS BOOLEAN
 	BEGIN
 		DECLARE startTime,endTime DECIMAL;
@@ -21,8 +21,7 @@ CREATE COMPUTE MODULE getServerInfo_Compute
 		SET OutputRoot.XMLNSC.ACE.ClusterInfo.Namespace = clusterNamespace;
 		SET OutputRoot.XMLNSC.ACE.ClusterInfo.Hostname = javaLangSystemGetenv('HOSTNAME');
 		SET OutputRoot.XMLNSC.ACE.ClusterInfo.UDPHostName = myHostName;		
-		
-		
+				
 		-- Server details
 		SET OutputRoot.XMLNSC.ACE.ServerInfo.BrokerName = BrokerName;
 		--SET OutputRoot.XMLNSC.ACE.ServerInfo."SQL-BrokerName" = SQL.BrokerName;
@@ -37,17 +36,11 @@ CREATE COMPUTE MODULE getServerInfo_Compute
 		SET sleepTime = MOD(CAST(startTime AS INTEGER),1000); 
 		SET slept = SLEEP(sleepTime);
 		SET endTime = CAST(javaLangSystemCurrentTimeMillis() AS DECIMAL(15,0));
-		SET OutputRoot.XMLNSC.ACE.PerformanceInfo.EndTime = endTime;
-		SET OutputRoot.XMLNSC.ACE.PerformanceInfo.StartTime = startTime;
+		--SET OutputRoot.XMLNSC.ACE.PerformanceInfo.EndTime = endTime;
+		--SET OutputRoot.XMLNSC.ACE.PerformanceInfo.StartTime = startTime;
 		SET OutputRoot.XMLNSC.ACE.PerformanceInfo.ElapsedTimeMs = CAST((endTime - startTime) AS INTEGER);
 		LOG EVENT VALUES('Service Invoked at: ' || CAST(CURRENT_TIMESTAMP AS CHARACTER) || 
 						' Elapsed time (ms): ' || CAST((endTime - startTime) AS CHARACTER));
-		
-		IF (Environment.Variables.MQ) THEN
-			PROPAGATE TO TERMINAL 'out1';
-		ELSE
-			PROPAGATE TO TERMINAL 'out';	
-		END IF;
 		
 		RETURN FALSE;
 	END;

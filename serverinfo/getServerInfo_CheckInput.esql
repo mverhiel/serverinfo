@@ -1,0 +1,15 @@
+BROKER SCHEMA serverinfo
+
+
+CREATE FILTER MODULE getServerInfo_CheckInput
+	CREATE FUNCTION Main() RETURNS BOOLEAN
+	BEGIN
+		IF Root.XMLNSC.request.type = 'performance' THEN
+			SET Environment.Variables.PerformanceData = TRUE;
+			RETURN TRUE;
+		ELSE
+			RETURN FALSE;
+		END IF;
+	END;
+
+END MODULE;
