@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>ace-utils-java</project>
+		<project>common-subflows</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
