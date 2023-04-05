@@ -1,0 +1,6 @@
+[submodule "ace-utils-javaLIB"]
+	path = ace-utils-javaLIB
+	url = git@github.com:mverhiel/ace-utils-javaLIB.git
+[submodule "ace-utils-java"]
+	path = ace-utils-java
+	url = git@github.com:mverhiel/ace-utils-java.git
