@@ -6,3 +6,11 @@
 	path = ace-utils-java
 	url = git@github.com:mverhiel/ace-utils-java.git
 	branch = main
+[submodule "common-logging"]
+	path = common-logging
+	url = git@github.com:mverhiel/common-logging.git
+	branch = main
+[submodule "common-subflows"]
+	path = common-subflows
+	url = git@github.com:mverhiel/common-subflows.git
+	branch = main
