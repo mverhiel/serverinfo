@@ -3,9 +3,9 @@
 	<name>serverinfo</name>
 	<comment></comment>
 	<projects>
+		<project>ace-utils-javaLIB</project>
 		<project>common-logging</project>
 		<project>common-subflows</project>
-		<project>ace-utils-javaLIB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
