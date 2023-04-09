@@ -6,6 +6,15 @@
     <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.traceInput" name="traceInput" lowerBound="1">
       <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.myHostName" name="myHostName" lowerBound="1" defaultValueLiteral="my-Hostname">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.clusterName" name="clusterName" lowerBound="1" defaultValueLiteral="my-cluster">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.clusterNamespace" name="clusterNamespace" defaultValueLiteral="my-Namespace">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
     <translation xmi:type="utility:TranslatableString" key="getServerInfo" bundleName="getServerInfo" pluginId="serverinfo"/>
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/serverinfo/icons/full/obj16/getServerInfo.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/serverinfo/icons/full/obj30/getServerInfo.gif"/>
@@ -46,6 +55,15 @@
     <propertyOrganizer>
       <propertyDescriptor groupName="Group.TraceInfo" configurable="true" userDefined="true" describedAttribute="Property.traceInput">
         <propertyName xmi:type="utility:TranslatableString" key="Property.traceInput" bundleName="getServerInfo" pluginId="serverinfo"/>
+        <propertyDescriptor groupName="Group.UDPInfo" configurable="true" userDefined="true" describedAttribute="Property.myHostName">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.myHostName" bundleName="getServerInfo" pluginId="serverinfo"/>
+          <propertyDescriptor groupName="Group.UDPInfo" configurable="true" userDefined="true" describedAttribute="Property.clusterName">
+            <propertyName xmi:type="utility:TranslatableString" key="Property.clusterName" bundleName="getServerInfo" pluginId="serverinfo"/>
+            <propertyDescriptor groupName="Group.UDPInfo" configurable="true" userDefined="true" describedAttribute="Property.clusterNamespace">
+              <propertyName xmi:type="utility:TranslatableString" key="Property.clusterNamespace" bundleName="getServerInfo" pluginId="serverinfo"/>
+            </propertyDescriptor>
+          </propertyDescriptor>
+        </propertyDescriptor>
       </propertyDescriptor>
     </propertyOrganizer>
     <stickyBoard/>
