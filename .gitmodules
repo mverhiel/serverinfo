@@ -7,3 +7,11 @@
 	path = common-subflows
 	url = git@github.com:mverhiel/common-subflows.git
 	branch = main
+[submodule "ace-utils-javaLIB"]
+	path = ace-utils-javaLIB
+	url = git@github.com:mverhiel/ace-utils-javaLIB.git
+	branch = main
+[submodule "ace-utils-java"]
+	path = ace-utils-java
+	url = git@github.com:mverhiel/ace-utils-java.git
+	branch = main
