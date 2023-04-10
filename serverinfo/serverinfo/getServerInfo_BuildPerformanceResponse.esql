@@ -67,7 +67,8 @@ CREATE COMPUTE MODULE getServerInfo_BuildPerformanceResponse
 	CREATE FUNCTION javaLangSystemCurrentTimeMillis()
 	RETURNS CHARACTER
 	LANGUAGE JAVA
-	EXTERNAL NAME "com.ibm.ace.Utils.getSystemTimeMilliSeconds";
+	EXTERNAL NAME "com.ibm.ace.Utils.getSystemTimeMilliSeconds"
+	CLASSLOADER "{ace-utils-javaLIB}";
 	
 	
 END MODULE;
