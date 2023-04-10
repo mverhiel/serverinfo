@@ -1,1 +1,0 @@
-/serverInfo/getServerInfo#wlmPolicy={WorkloadManagement}:serverInfo

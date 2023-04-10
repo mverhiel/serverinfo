@@ -1,7 +1,0 @@
-resolveUserVariableEnvVars: true
-UserVariables:
-  clusterName: 'my-cluster'
-  clusterNamespace: 'my-namespace'
-  myHostName: ${HOSTNAME}
-  
-  
