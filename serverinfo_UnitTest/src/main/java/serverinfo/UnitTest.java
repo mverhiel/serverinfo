@@ -82,7 +82,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -149,7 +152,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -216,7 +222,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -283,7 +292,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -350,7 +362,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -417,7 +432,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -484,7 +502,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -551,7 +572,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -618,7 +642,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -685,7 +712,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -752,7 +782,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -819,7 +852,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -886,7 +922,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -953,7 +992,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
@@ -1020,7 +1062,10 @@ public class UnitTest {
             expectedMessageAssembly.buildFromRecordedMessageAssembly(messageStream);
 
             // Assert that the actual message tree matches the expected message tree
-            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly));
+            assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
+            		.ignoreTimeStamps()
+            		.ignoreDateTime());
 
         }
         catch (Exception ex) {
