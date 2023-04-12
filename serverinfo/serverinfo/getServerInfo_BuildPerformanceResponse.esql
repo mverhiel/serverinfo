@@ -42,7 +42,12 @@ CREATE COMPUTE MODULE getServerInfo_BuildPerformanceResponse
 		LOG EVENT VALUES('Service Invoked at: ' || CAST(CURRENT_TIMESTAMP AS CHARACTER) || 
 						' Elapsed time (ms): ' || CAST((endTime - startTime) AS CHARACTER));
 		
-		RETURN TRUE;
+		IF Environment.Variables.MQ THEN
+			PROPAGATE TO TERMINAL 'out1';
+		ELSE
+			PROPAGATE TO TERMINAL 'out';
+		END IF;
+		RETURN FALSE;
 	END;
 
 	CREATE PROCEDURE CopyMessageHeaders() BEGIN
