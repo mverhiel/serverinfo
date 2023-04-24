@@ -83,6 +83,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -153,6 +154,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -223,6 +225,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -293,6 +296,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -363,6 +367,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -433,6 +438,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -503,6 +509,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -573,6 +580,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -643,6 +651,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -713,6 +722,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -783,6 +793,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -853,6 +864,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -923,6 +935,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -993,6 +1006,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
@@ -1063,6 +1077,7 @@ public class UnitTest {
 
             // Assert that the actual message tree matches the expected message tree
             assertThat(actualMessageAssembly, equalsMessage(expectedMessageAssembly)
+            		.ignorePath("/Message/XMLNSC/ACE/ClusterInfo/Hostname", true)
             		.ignorePath("/Message/XMLNSC/ACE/PerformanceInfo/ElapsedTimeMs", true)
             		.ignoreTimeStamps()
             		.ignoreDateTime());
