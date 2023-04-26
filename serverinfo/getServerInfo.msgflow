@@ -43,10 +43,10 @@
       <nodes xmi:type="common_logging_log_exception.subflow:FCMComposite_1" xmi:id="FCMComposite_1_8" location="702,357">
         <translation xmi:type="utility:ConstantString" string="log_exception"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="21,354" queueName="SERVER.INFO.IN" messageDomainProperty="XMLNSC">
+      <nodes xmi:type="ComIbmMQInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="21,354" queueName="SERVER.INFO.IN" messageDomainProperty="XMLNSC" policyUrl="{PolicyProject}:MQEndpoint">
         <translation xmi:type="utility:ConstantString" string="MQ Input"/>
       </nodes>
-      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="823,193" queueName="SERVER.INFO.OUT">
+      <nodes xmi:type="ComIbmMQOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_10" location="823,193" queueName="SERVER.INFO.OUT" policyUrl="{PolicyProject}:MQEndpoint">
         <translation xmi:type="utility:ConstantString" string="MQ Output"/>
       </nodes>
       <nodes xmi:type="ComIbmCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_11" location="116,237" computeExpression="esql://routine/serverinfo#getServerInfo_SetEnvironment.Main">
